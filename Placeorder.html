@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Wrap the order form */
+.order-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto; /* centers horizontally with margin at top/bottom */
+}
+
+
+        .order-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .order-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .order-container input,
+        .order-container textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .order-container textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .order-container button {
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+  <!-- Promo Top Bar -->
+  <div class="promo-bar">
+    <p class="promo-text">
+      Sign in and get 15% OFF your first order!
+      <a href="login.html">Sign In</a>
+    </p>
+
+    <p class="promo-text">
+      Sign in and get 15% OFF your first order!
+      <a href="login.html">Sign In</a>
+    </p>
+
+    <p class="promo-text">
+      Sign in and get 15% OFF your first order!
+      <a href="login.html">Sign In</a>
+    </p>
+  </div>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="top-menu navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="product.html" id="productsMenu">Products</a>
+                        <div class="mega-menu">
+                            <div class="column ">
+                                <h4>By Category</h4>
+                                <a href="diningchairs.html">Dining Chairs</a>
+                                <a href="sofa&armchairs.html">Sofas & Armchairs</a>
+                                <a href="banquette.html">Banquette</a>
+                                <a href="barheightstools.html">Bar Height Stools</a>
+                                <a href="officechairs.html">Office Chairs</a>
+                                <a href="KidsChairs.html">Kids Chairs</a>
+                            </div>
+
+
+                            <div class="column">
+                                <h4>By Brand</h4>
+                                <a href="Bartlett.html">Bartlett</a>
+                                <a href="BelAir.html">Bel Air</a>
+                                <a href="Bergen.html">Bergen</a>
+                            </div>
+
+                            <div class="column">
+                                <h4>Offers</h4>
+                                <a href="sales.html" class="sale">Sales</a>
+                                <a href="#">Products Compare</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="store.html" id="storeMenu">Store</a>
+                        <div class="mega-menu">
+                            <div class="column px-5">
+                                <h5>By Brand</h5>
+                                <a href="Bartlett.html">Bartlett</a>
+                                <a href="BelAir.html">Bel Air</a>
+                                <a href="Bergen.html">Bergen</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="FAQs.html" id="faqMenu">FAQs</a>
+                        <div class="mega-menu">
+                            <div class="column">
+                                <h5>Help & FAQs</h5>
+                                <a href="returnpolicy.html">Return Policy</a>
+                                <a href="terms&conditions.html">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="blogs.html" id="blogsMenu">Blogs</a>
+                        <div class="mega-menu">
+                            <div class="column">
+                                <a href="getinspired.html">Get Inspired</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-01.png" alt="" height="50px" width="100%" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <form action="search.html" method="GET" class="input-group border">      
+                        <input type="text" name="q" class="form-control border-0" placeholder="Search for products..."
+                            required />
+                        <button class="btn" type="reset">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </ul>
+                <form class="d-flex">
+                    <ul class="list-unstyled d-flex topicons">
+                        <li class="me-4">
+                            <a href="login.html">
+                                <span><i class="fa fa-user"></i></span>
+                            </a>
+                        </li>
+                        <li class="me-4">
+                            <a href="wishlist.html">
+                                <span><i class="fa fa-heart"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <span><i class="fa fa-bag-shopping"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR SECTION -->
+
+
+    <div class="order-container">
+    <h2>Place Your Order</h2>
+<form id="orderForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <input type="email" placeholder="email address" required>
+    <button type="submit">Place Order</button>
+</form>
+</div>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const orderForm = document.getElementById("orderForm");
+
+    if (!orderForm) {
+        console.log("Order form not found");
+        return;
+    }
+
+    orderForm.addEventListener(
+        "submit",
+        function (event) {
+            event.preventDefault();
+
+            // 🔹 Collect form data
+            const formData = new FormData(orderForm);
+            const orderDetails = {};
+
+            formData.forEach((value, key) => {
+                orderDetails[key] = value;
+            });
+
+            // 🔹 Print data to console
+            console.log("Order Placed Successfully!");
+            console.table(orderDetails);
+
+            alert("Thank you! Your order has been successfully placed.");
+
+            orderForm.reset();
+
+            // 🔹 Redirect to home page
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1000);
+        },
+        { once: true }
+    );
+});
+</script>
+
+
+
+    <!-- footer -->
+   
+ <footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Left: Logo & Contact -->
+    <div class="footer-col">
+      <h2 class="footer-logo"><img src="assets/img/logo-01.png" alt="logo" height="50px" width="120px"></h2>
+      <p>12 23rd Street SE, Hickory, NC</p>
+      <p>Phone: +1(828) 324-7992</p>
+      <p>Email:
+        contact@richfieldchairs.com</a></p>
+    </div>
+
+    <!-- Middle: Information -->
+    <div class="footer-col">
+      <h3>Information</h3>
+      <ul>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="store.html">Brands</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="FAQs.html">Help & FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Middle: My Account -->
+    <div class="footer-col">
+      <h3>My Account</h3>
+      <ul>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signup.html">Register</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li><a href="product.html">Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Newsletter -->
+    <div class="footer-col newsletter">
+      <h3>Join Our Newsletter for $50 off</h3>
+      <p>Get E-mail updates about our latest shop and special offers</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+
+  </div>
+</footer>
+ 
+<div class="copyright-section"><div class="row">
+<div class="col-lg-6 ">
+  <h1 class="copyright-text">Richfield Chairs © 2026. Discover our Sitemap.</h1>
+  
+  
+</div>
+<div class=" col-lg-6 footer-payments">
+  <img src="assets/img/payment-method1.png" alt="Payment Methods">
+</div>
+</div></div>
+
+
+  <!-- Js Links -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

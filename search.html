@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .product {
+            margin-bottom: 15px;
+        }
+
+        .product a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #1b2f44;
+        }
+
+        .no-results {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Search Results</h1>
+    <div id="results"></div>
+
+    <script>
+        // Get search query
+        const params = new URLSearchParams(window.location.search);
+        const q = params.get('q');
+        const query = q ? q.trim().toLowerCase() : '';
+
+        // List of products (add all your products here)
+        const products = [
+            { name: "BEL AIR LULE", url: "BelAirLule.html" },
+            { name: "BEL AIR ELMIRA", url: "BelAirElmira.html" },
+            { name: "BARTLETT ABEL", url: "BartlettAbel.html" },
+            { name: "BERGEN KUBRICK", url: "BergenKubrick.html" },
+            { name: "BERGEN MIRO", url: "BergenMiro.html" },
+            { name: "BERGEN SHONA", url: "BergenShona.html" },
+            { name: "BEL AIR ORSON", url: "BelAirOrson.html" },
+            { name: "BEL AIR BRANAGH", url: "BelAirBranagh.html" },
+            { name: "BARTLETT LYRA GARDEN", url: "BartlettLyraGarden.html" },
+            { name: "BARTLETT NARDI", url: "BartlettNardi.html" },
+            { name: "ABOUT US", url: "aboutus.html" },
+            { name: "BANQUETTE", url: "Banquette.html" },
+            { name: "BAR HEIGHT STOOLS", url: "BarHeightStools.html" },
+            { name: "BARTLETT", url: "Bartlett.html" },
+            { name: "BARTLETT ASARE", url: "BartlettAsare.html" },
+            { name: "BARTLETT ASSIM", url: "BartlettAssim.html" },
+            { name: "BARTLETT LYRA", url: "BartlettLyra.html" },
+            { name: "BARTLETT RALEIGH", url: "BartlettRaleigh.html" },
+            { name: "BARTLETT SWARA", url: "BartlettSwara.html" },
+            { name: "BARTLETT TOPA", url: "BartlettTopa.html" },
+            { name: "BEL AIR", url: "BelAir.html" },
+            { name: "BEL AIR 2 LG", url: "BelAir2LG.html" },
+            { name: "BEL AIR LULE 2", url: "BelAirLule2.html" },
+            { name: "BEL AIR REVY", url: "BelAirRevy.html" },
+            { name: "BEL AIR RHYE", url: "BelAirRhye.html" },
+            { name: "BEL AIR SWINTON", url: "BelAirSwinton.html" },
+            { name: "BEL AIR SWINTONN", url: "BelAirSwintonn.html" },
+            { name: "BEL AIR THELMA", url: "BelAirThelma.html" },
+            { name: "BERGEN", url: "Bergen.html" },
+            { name: "BERGEN ABBON", url: "BergenAbbon.html" },
+            { name: "BERGEN DEON", url: "BergenDeon.html" },
+            { name: "BERGEN KALDSPEL", url: "BergenKaldspel.html" },
+            { name: "BERGEN MARGOT", url: "BergenMargot.html" },
+            { name: "BERGEN REVY", url: "BergenRevy.html" },
+            { name: "BERGEN SETE", url: "BergenSete.html" },
+            { name: "BERGEN SWINTON", url: "BergenSwinton.html" },
+            { name: "BLOGS", url: "blogs.html" },
+            { name: "CONTACT US", url: "contactus.html" },
+            { name: "DINING CHAIRS", url: "diningchairs.html" },
+            { name: "FAQS", url: "FAQs.html" },
+            { name: "HOME", url: "index.html" },
+            { name: "KIDS CHAIRS", url: "KidsChairs.html" },
+            { name: "OFFICE CHAIRS", url: "officechairs.html" },
+            { name: "PRODUCTS", url: "product.html" },
+            { name: "RETURN POLICY", url: "returnpolicy.html" },
+            { name: "SALES", url: "sales.html" },
+            { name: "SOFA & ARMCHAIRS", url: "sofa&armchairs.html" },
+            { name: "STORE", url: "store.html" },
+            { name: "TERMS & CONDITIONS", url: "terms&conditions.html" },
+            { name: "WISHLIST", url: "wishlist.html" },
+        ];
+
+        // Filter matching products
+        const filtered = products.filter(p => p.name.toLowerCase().includes(query));
+
+        const resultsDiv = document.getElementById('results');
+
+        if (!query) {
+            resultsDiv.innerHTML = '<p class="no-results">Please enter a search term.</p>';
+        } else if (filtered.length === 0) {
+            resultsDiv.innerHTML = `<p class="no-results">No results found for "${query}".</p>`;
+        } else if (filtered.length === 1) {
+            // Only one match → redirect immediately
+            window.location.href = filtered[0].url;
+        } else {
+            // Multiple matches → list them
+            filtered.forEach(product => {
+                const div = document.createElement('div');
+                div.className = 'product';
+                div.innerHTML = `<a href="${product.url}">${product.name}</a>`;
+                resultsDiv.appendChild(div);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

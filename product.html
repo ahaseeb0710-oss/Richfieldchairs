@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+</head>
+
+<body>
+    <!-- Promo Top Bar -->
+    <div class="promo-bar">
+        <p class="promo-text">
+            Sign in and get 15% OFF your first order!
+            <a href="login.html">Sign In</a>
+        </p>
+
+        <p class="promo-text">
+            Sign in and get 15% OFF your first order!
+            <a href="login.html">Sign In</a>
+        </p>
+
+        <p class="promo-text">
+            Sign in and get 15% OFF your first order!
+            <a href="login.html">Sign In</a>
+        </p>
+    </div>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="top-menu navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="product.html" id="productsMenu">Products</a>
+                        <div class="mega-menu">
+                            <div class="column ">
+                                <h4>By Category</h4>
+                                <a href="diningchairs.html">Dining Chairs</a>
+                                <a href="sofa&armchairs.html">Sofas & Armchairs</a>
+                                <a href="banquette.html">Banquette</a>
+                                <a href="barheightstools.html">Bar Height Stools</a>
+                                <a href="officechairs.html">Office Chairs</a>
+                                <a href="KidsChairs.html">Kids Chairs</a>
+                            </div>
+
+
+                            <div class="column">
+                                <h4>By Brand</h4>
+                                <a href="Bartlett.html">Bartlett</a>
+                                <a href="BelAir.html">Bel Air</a>
+                                <a href="Bergen.html">Bergen</a>
+                            </div>
+
+                            <div class="column">
+                                <h4>Offers</h4>
+                                <a href="sales.html" class="sale">Sales</a>
+                                <a href="#">Products Compare</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="store.html" id="storeMenu">Store</a>
+                        <div class="mega-menu">
+                            <div class="column px-5">
+                                <h5>By Brand</h5>
+                                <a href="Bartlett.html">Bartlett</a>
+                                <a href="BelAir.html">Bel Air</a>
+                                <a href="Bergen.html">Bergen</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="FAQs.html" id="faqMenu">FAQs</a>
+                        <div class="mega-menu">
+                            <div class="column">
+                                <h5>Help & FAQs</h5>
+                                <a href="returnpolicy.html">Return Policy</a>
+                                <a href="terms&conditions.html">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="blogs.html" id="blogsMenu">Blogs</a>
+                        <div class="mega-menu">
+                            <div class="column">
+                                <a href="getinspired.html">Get Inspired</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-01.png" alt="" height="50px" width="100%" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <form action="search.html" method="GET" class="input-group border">
+                        <input type="text" name="q" class="form-control border-0" placeholder="Search for products..."
+                            required />
+                        <button class="btn" type="reset">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </ul>
+                <form class="d-flex">
+                    <ul class="list-unstyled d-flex topicons">
+                        <li class="me-4">
+                            <a href="login.html">
+                                <span><i class="fa fa-user"></i></span>
+                            </a>
+                        </li>
+                        <li class="me-4">
+                            <a href="wishlist.html">
+                                <span><i class="fa fa-heart"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <span><i class="fa fa-bag-shopping"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR SECTION -->
+
+
+    <div class="row">
+        <div class="productbanner" style="background-image: url(assets/img/productsbanner.jpg)">
+            <div id="banner-text">
+                <h2 class="banner-p">Products</h2>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="shop-layout">
+
+                <!-- SIDEBAR -->
+                <aside class="sidebar">
+
+                    <!-- Categories -->
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="diningchairs.html">Dining Chairs</a></li>
+                            <li><a href="sofa&armchairs.html">Sofas & Armchairs</a></li>
+                            <li><a href="Banquette.html">Banquette</a></li>
+                            <li><a href="BarHeightStools.html">Bar Height Stools</a></li>
+                            <li><a href="officechairs.html">Office Chairs</a></li>
+                            <li><a href="KidsChairs.html">Kids Chairs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Brand -->
+                    <div class="filter-section">
+                        <h3>Brand</h3>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Bergen
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Bel Air
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Bartlett
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Price -->
+                     
+                    <div class="filter-section">
+                        <h3>Price</h3>
+
+                        <div class="price-values">
+                            <span id="minPrice">$30</span>
+                            <span id="maxPrice">$3000</span>
+                        </div>
+
+                        <input type="range" min="30" max="3000" value="3000" class="price-slider" id="priceRange">
+
+                        <button class="filter-btn" id="applyFilter">FILTER</button>
+                    </div>
+
+
+                    <!-- PRODUCTS AREA -->
+
+            </div>
+        </div>
+        <div class="col-lg-9">
+
+            <section class="product-section">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/img/banquette.img.1.jpg" alt="Bartlett Assim">
+                        <span class="category">BANQUETTE</span>
+                        <a href="BartlettAssim.html">
+                            <h3>Bartlett Assim</h3>
+                        </a>
+                        <p class="price">$329.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/banquette.img.2.jpg" alt="Bartlett Raleigh">
+                        <span class="category">BANQUETTE</span>
+                        <a href="BartlettRaleigh.html">
+                            <h3>Bartlett Raleigh</h3>
+                        </a>
+                        <p class="price">$139.30 <span class="old-price">$199.00</span></p>
+                    </div>
+
+
+                    <div class="product-card sale">
+                        <img src="assets/img/banquette.img.4.jpg" alt="Bartlett Asare">
+                        <span class="category">BANQUETTE</span>
+                        <a href="BartlettAsare.html">
+                            <h3>Bartlett Asare</h3>
+                        </a>
+                        <p class="price">
+                            $199.00
+                        </p>
+                    </div>
+
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/banquette.img.3.jpg" alt="Bel Air Swinton">
+                        <span class="category">Bar Height Stools</span>
+                        <a href="BelAirSwinton.html">
+                            <h3>Bel Air Swinton</h3>
+                        </a>
+                        <p class="price">
+                            $104.30 <span class="old-price">$149.00</span>
+                        </p>
+                    </div>
+
+
+
+
+                    <div class="product-card sale">
+                        <img src="assets/img/barlett.img.5.jpg" alt="Bartlett Abel">
+                        <span class="category">Bartlett</span>
+                        <a href="BartlettAbel.html">
+                            <h3>Bartlett Abel</h3>
+                        </a>
+                        <p class="price">
+                            $179.00
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/barlett.img.6.jpg" alt="Bartlett Lyra">
+                        <span class="category">Bartlett</span>
+                        <a href="BartlettLyra.html">
+                            <h3>Bartlett Lyra</h3>
+                        </a>
+                        <p class="price">
+                            $314.30 <span class="old-price">$449.00</span>
+                        </p>
+                    </div>
+
+
+
+                    <div class="product-card sale">
+                        <img src="assets/img/barlett.img.9.jpg" alt="Bartlett Topa">
+                        <span class="category">Bartlett</span>
+                        <a href="BartlettTopa.html">
+                            <h3>Bartlett Topa</h3>
+                        </a>
+                        <p class="price">
+                            $229.00
+                        </p>
+                    </div>
+
+
+
+                    <div class="product-card">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.2.jpg" alt="Bel Air Lule">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirLule.html">
+                            <h3>Bel Air Lule</h3>
+                        </a>
+                        <p class="price">$209.30 <span class="old-price">$299.00</span></p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.3.jpg" alt="Bel Air Swinton">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirSwinton.html">
+                            <h3>Bel Air Swinton</h3>
+                        </a>
+                        <p class="price">
+                            $104.30 <span class="old-price">$149.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.4.jpg" alt="Bel Air Orson">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirOrson.html">
+                            <h3>Bel Air Orson</h3>
+                        </a>
+                        <p class="price">
+                            $734.30 <span class="old-price">$1049.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.5.jpg" alt="Bel Air Branagh">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirLule2.html">
+                            <h3>Bel Air Branagh</h3>
+                        </a>
+                        <p class="price">
+                            $734.30 <span class="old-price">$1049.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/BelAir.img.6.jpg" alt="Bel Air Elmira">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirElmira.html">
+                            <h3>Bel Air Elmira</h3>
+                        </a>
+                        <p class="price">
+                            $2199.00
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.7.jpg" alt="Bel Air Rhye">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirRhye.html">
+                            <h3>Bel Air Rhye</h3>
+                        </a>
+                        <p class="price">
+                            $126.30 <span class="old-price">$180.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/BelAir.img.8.jpg" alt="Bel Air Thelma">
+                        <span class="category">Bel Air</span>
+                        <a href="BelAirThelma.html">
+                            <h3>Bel Air Thelma</h3>
+                        </a>
+                        <p class="price">
+                            $154.30 <span class="old-price">$220.00</span>
+                        </p>
+                    </div>
+
+
+
+                    <div class="product-card">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/bergen.img.1.jpg" alt="Bergen Miro">
+                        <span class="category">Bergen</span>
+                        <a href="BergenMiro.html">
+                            <h3>Bergen Miro</h3>
+                        </a>
+                        <p class="price">$279.30 <span class="old-price">$399.00</span> </p>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/bergen.img.2.jpg" alt="Bergen Kubrick">
+                        <span class="category">Bergen</span>
+                        <a href="BergenKubrick.html">
+                            <h3>Bergen Kubrick</h3>
+                        </a>
+                        <p class="price">$349.30 <span class="old-price">$499.00</span></p>
+                    </div>
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/sofa&armchairs.img.4.jpg" alt="Bel Air 2LG">
+                        <span class="category">SOFAS & ARMCHAIRS</span>
+                        <a href="BelAir2LG.html">
+                            <h3>Bel Air 2LG</h3>
+                        </a>
+                        <p class="price">
+                            $379.00
+                        </p>
+                    </div>
+                    <div class="product-card sale">
+                        <img src="assets/img/bergen.img.3.jpg" alt="Bergen Sete">
+                        <span class="category">Bergen</span>
+                        <a href="BergenSete.html">
+                            <h3>Bergen Sete</h3>
+                        </a>
+                        <p class="price">
+                            $599.00
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/bergen.img.4.jpg" alt="Bergen Shona">
+                        <span class="category">Bergen</span>
+                        <a href="BergenShona.html">
+                            <h3>Bergen Shona</h3>
+                        </a>
+                        <p class="price">
+                            $209.30 <span class="old-price">$299.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/bergen.img.6.jpg" alt="Bergen Revy">
+                        <span class="category">Bergen</span>
+                        <a href="">
+                            <h3>Bergen Revy</h3>
+                        </a>
+                        <p class="price">
+                            $249.00
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/bergen.img.8.jpg" alt="Bergen Deon">
+                        <span class="category">Bergen</span>
+                        <a href="BergenDeon.html">
+                            <h3>Bergen Deon</h3>
+                        </a>
+                        <p class="price">
+                            $69.30 <span class="old-price">$99.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/bergen.img.9.jpg" alt="Bergen Margot">
+                        <span class="category">Bergen</span>
+                        <a href="BergenMargot.html">
+                            <h3>Bergen Margot</h3>
+                        </a>
+                        <p class="price">
+                            $249.00
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/bergen.img.10.jpg" alt="Bergen Swinton">
+                        <span class="category">Bergen</span>
+                        <a href="BergenSwinton.html">
+                            <h3>Bergen Swinton</h3>
+                        </a>
+                        <p class="price">
+                            $199.00
+                        </p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="assets/img/dining.img1.jpg" alt="Bergen Abbon">
+                        <span class="category">DINING CHAIRS</span>
+                        <a href="BergenAbbon.html">
+                            <h3>Bergen Abbon</h3>
+                        </a>
+                        <p class="price">$399.00</p>
+                    </div>
+
+
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 50%</span>
+                        <img src="assets/img/dining.img3.jpg" alt="Bergen Kaldspel">
+                        <span class="category">DINING CHAIRS</span>
+                        <a href="BergenKaldspel.html">
+                            <h3>Bergen Kaldspel</h3>
+                        </a>
+                        <p class="price">
+                            $114.50 <span class="old-price">$229.00</span>
+                        </p>
+                    </div>
+
+
+
+                    <div class="product-card">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/kidschair.img.2.jpg" alt="Bartlett Lyra Garden">
+                        <span class="category">Kids Chairs</span>
+                        <a href="product9.html">
+                            <a href="BartlettLyraGarden.html">
+                                <h3>Bartlett Lyra Garden</h3>
+                            </a>
+                        </a>
+                        <p class="price">$125.30 <span class="old-price">179.00</span></p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <span class="badge">SALE 30%</span>
+                        <img src="assets/img/kidschair.img.3.jpg" alt="Bartlett Nardi">
+                        <span class="category">Kids Chairs</span>
+                        <a href="product10.html">
+                            <a href="BartlettNardi.html">
+                                <h3>Bartlett Nardi</h3>
+                            </a>
+                        </a>
+                        <p class="price">
+                            $279.30 <span class="old-price">$339.00</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/kidschair.img.5.jpg" alt="Bartlett Swara">
+                        <span class="category">Kids Chairs</span>
+                        <a href="BartlettSwara.html">
+                            <h3>Bartlett Swara</h3>
+                        </a>
+                        <p class="price">
+                            $229.00
+                        </p>
+                    </div>
+
+
+                    <div class="product-card">
+                        <img src="assets/img/office.img.2.jpg" alt="Bel Air Lule 2">
+                        <span class="category">Office Chairs</span>
+                        <a href="BelAirLule2.html">
+                            <h3>Bel Air Lule</h3>
+                        </a>
+                        <p class="price">
+                            $209.39
+                        </p>
+                    </div>
+
+                    <div class="product-card sale">
+                        <img src="assets/img/office.img.3.jpg" alt="Bel Air Revy">
+                        <span class="category">Office Chairs</span>
+                        <a href="BelAirRevy.html">
+                            <h3>Bel Air Revy</h3>
+                        </a>
+                        <p class="price">
+                            $109.00
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+            const wishlistButtons = document.querySelectorAll(".wishlist-btn");
+            const addToCartButtons = document.querySelectorAll(".add-to-cart-btn"); // if you have cart
+
+            // If not logged in, block actions
+            if (!currentUser) {
+                wishlistButtons.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        alert("Please login to add items to your wishlist.");
+                        window.location.href = "login.html";
+                    });
+                });
+
+                addToCartButtons.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        alert("Please login to add items to your cart.");
+                        window.location.href = "login.html";
+                    });
+                });
+                return;
+            }
+
+            // Wishlist functionality (per user)
+            let wishlists = JSON.parse(localStorage.getItem("wishlists")) || {};
+            if (!wishlists[currentUser.email]) wishlists[currentUser.email] = [];
+
+            wishlistButtons.forEach(btn => {
+                const productId = btn.getAttribute("data-id");
+                if (wishlists[currentUser.email].some(item => item.id === productId)) {
+                    btn.textContent = "♥ Added";
+                    btn.classList.add("added");
+                }
+
+                btn.addEventListener("click", () => {
+                    if (wishlists[currentUser.email].some(item => item.id === productId)) {
+                        alert("Item already in wishlist!");
+                        return;
+                    }
+
+                    const productName = btn.getAttribute("data-name");
+                    const productPrice = btn.getAttribute("data-price");
+                    wishlists[currentUser.email].push({ id: productId, name: productName, price: productPrice });
+                    localStorage.setItem("wishlists", JSON.stringify(wishlists));
+                    btn.textContent = "♥ Added";
+                    btn.classList.add("added");
+                    alert(`${productName} added to your wishlist!`);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        const priceRange = document.getElementById("priceRange");
+        const minPrice = document.getElementById("minPrice");
+        const maxPrice = document.getElementById("maxPrice");
+        const filterBtn = document.getElementById("applyFilter");
+
+        // Update price text while dragging
+        priceRange.addEventListener("input", () => {
+            maxPrice.textContent = `$${priceRange.value}`;
+        });
+
+        // FILTER click
+        filterBtn.addEventListener("click", () => {
+            const max = Number(priceRange.value);
+
+            document.querySelectorAll(".product-card").forEach(card => {
+                const priceEl = card.querySelector(".price");
+                if (!priceEl) return;
+
+                // Extract number from "$329.00"
+                const price = Number(priceEl.textContent.replace(/[^0-9.]/g, ""));
+
+                card.style.display = price <= max ? "block" : "none";
+            });
+        });
+    </script>
+    <!-- footer -->
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Left: Logo & Contact -->
+            <div class="footer-col">
+                <h2 class="footer-logo"><img src="assets/img/logo-01.png" alt="logo" height="50px" width="120px"></h2>
+                <p>12 23rd Street SE, Hickory, NC</p>
+                <p>Phone: +1(828) 324-7992</p>
+                <p>Email:
+                    contact@richfieldchairs.com</a></p>
+            </div>
+
+            <!-- Middle: Information -->
+            <div class="footer-col">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="store.html">Brands</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="FAQs.html">Help & FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Middle: My Account -->
+            <div class="footer-col">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Newsletter -->
+            <div class="footer-col newsletter">
+                <h3>Join Our Newsletter for $50 off</h3>
+                <p>Get E-mail updates about our latest shop and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright-section">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <h1 class="copyright-text">Richfield Chairs © 2026. Discover our Sitemap.</h1>
+
+
+            </div>
+            <div class=" col-lg-6 footer-payments">
+                <img src="assets/img/payment-method1.png" alt="Payment Methods">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Js Links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
